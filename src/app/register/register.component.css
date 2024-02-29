@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    overflow: hidden;
+    font-family: poppins, "Courier New", Courier, monospace;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    min-height: 100vh;
+    background-image: url("images/back3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+section .color{
+    position: absolute;
+    filter: blur(150px);
+}
+
+section .color:nth-child(1){
+    width: 1200px;
+    height: 400px;
+    background: rgb(35, 205, 211);
+    top: -40px;
+    left: -60px;
+}
+
+section .color:nth-child(2){
+    width: 1000px;
+    height: 400px;
+    background: rgb(24, 223, 173);
+    bottom: -40px;
+    right: -60px;
+}
+
+section .color:nth-child(3){
+    width: 400px;
+    height: 400px;
+    background: rgb(3, 129, 129);
+    bottom: -40px;
+    left: -60px;
+}
+section .color:nth-child(4){
+    width: 400px;
+    height: 400px;
+    background: rgb(7, 255, 152);
+    top: -40px;
+    right: -60px;
+}
+.box{
+    position: relative;
+}
+
+.box .square{
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.541);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.141);
+    border-right: 1px solid rgba(255, 255, 255, 0.141);
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    background:rgba(255, 255, 255, 0.3);
+    box-shadow:0 25px 45px rgba(0,0,0,0.2);
+    animation: animate 7s linear infinite;
+    animation-delay: calc(-1s* var(--i));
+}
+
+@keyframes animate{
+    100%,0%{
+        transform: translateY(-40px);
+    }
+
+    50%{
+        transform: translateY(40px);
+    }
+}
+
+.box .square:nth-child(1){
+    width: 90px;
+    height: 90px;
+    top: -40px;
+    right: -50px;
+}
+.box .square:nth-child(2){
+    width: 60px;
+    height: 60px;
+    top: -80px;
+    left: 100px;
+}.box .square:nth-child(3){
+    width: 100px;
+    height: 100px;
+    top: 170px;
+    left: -50px;
+    z-index: 2;
+}.box .square:nth-child(4){
+    width: 60px;
+    height: 60px;
+    top: 280px;
+    right: -30px;
+    z-index: 2;
+}
+.box .square:nth-child(5){
+    width: 40px;
+    height: 40px;
+    top: 420px;
+    right: 120px;
+}
+
+
+.container{
+    position: relative;
+    width:500px;
+    height: 750px;
+    background:rgba(225,225,225,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.541);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.141);
+    border-right: 1px solid rgba(255, 255, 255, 0.141);
+    border-radius: 10px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+}
+
+.form h1{
+    position: relative;
+}
+
+.form h1{
+    font-size:2em;
+    padding-bottom: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: white;
+}
+
+.form h1::before{
+    content:'';
+    position: absolute;
+    bottom: 10px;;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.788);
+}
+
+.form .input-field{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form .input-field input{
+    width: 100%;
+    padding: 8px 20px;
+    border-radius:40px;
+    box-shadow: 0 12px 12px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.541);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.141);
+    border-right: 1px solid rgba(255, 255, 255, 0.141);
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.241);
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form .input-field input::placeholder{
+    color: white;
+}
+.forgert{
+    font-size: large;
+}
+button{
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5cm;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+    -6px -6px -12px #fff;
+
+}
+.buttom{
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5cm;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+    -6px -6px -12px #fff;
+}

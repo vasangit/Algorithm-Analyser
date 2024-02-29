@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width,initial-scale=1.0">
+        <title>login</title>
+        <link rel="stylesheet" href="register.component.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+    <body>
+        <section>
+        <div class="box">
+            <div class="container">
+                <div class="form">
+                    <h1>kaar technologies</h1>
+                    <hr>
+                    <h1>Signup</h1>
+                    
+                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate class="d-flex-center">
+
+                        <div class="input-field">
+                          <mat-form-field>
+                            
+                            <input  matInput placeholder="--UserName" formControlName="firstname">
+                            <mat-error *ngIf="!loginForm.get('firstname')?.errors?.required && (loginForm.get('firstname')?.errors?.pattern)">
+                              Please enter a valid Name
+                            </mat-error>
+                            <mat-error *ngIf="loginForm.get('firstname')?.invalid && (loginForm.get('firstname')?.dirty || loginForm.get('firstname')?.touched) && loginForm.get('firstname')?.errors?.required">
+                              UserName is required
+                            </mat-error>
+                          </mat-form-field>
+                        </div>
+                      <div class="input-field">
+                        <mat-form-field>
+                          
+                          <input  matInput placeholder="--Email" formControlName="email">
+                          <mat-error *ngIf="!loginForm.get('email')?.errors?.required && (loginForm.get('email')?.errors?.pattern)">
+                          </mat-error>
+                          <mat-error *ngIf="loginForm.get('email')?.invalid && (loginForm.get('email')?.dirty || loginForm.get('email')?.touched) && loginForm.get('email')?.errors?.required">
+                          </mat-error>
+                        </mat-form-field>
+                      </div>
+              
+                      <div class="input-field">
+                        <mat-form-field>
+                          
+                          <input  matInput placeholder="--Contact" formControlName="number">
+                          <mat-error *ngIf="!loginForm.get('number')?.errors?.required && (loginForm.get('number')?.errors?.pattern)">
+                          </mat-error>
+                          <mat-error *ngIf="loginForm.get('number')?.invalid && (loginForm.get('number')?.dirty || loginForm.get('number')?.touched) && loginForm.get('number')?.errors?.required">
+
+                          </mat-error>
+                        </mat-form-field>
+                      </div>
+              
+                      <div class="input-field">
+                        <mat-form-field>
+                          <input matInput type="password" placeholder="--Password" formControlName="password">    
+                          <mat-error *ngIf="!loginForm.get('password')?.errors?.required">
+
+                          </mat-error>
+                          <mat-error *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched) && loginForm.get('password')?.errors?.required">
+
+                          </mat-error>
+                        </mat-form-field>
+                      </div>
+                      
+                      <div class="input-field">
+                        <mat-form-field>
+                          <input matInput type="password" placeholder="--ConfirmPassword" formControlName="cpassword">    
+                          <mat-error *ngIf="!loginForm.get('cpassword')?.errors?.required">
+
+                          </mat-error>
+                          <mat-error *ngIf="loginForm.get('cpassword')?.invalid && (loginForm.get('cpassword')?.dirty || loginForm.get('cpassword')?.touched) && loginForm.get('cpassword')?.errors?.required">
+                          </mat-error>
+                        </mat-form-field>
+                      </div>
+                      <br>
+                      <br>
+              
+                      <div class="forgot">
+                        <button mat-raised-button color="primary" mat-button>Sign In</button>
+                        <p class="forgot">Already have an account ? <a routerLink="/"><button mat-raised-button  mat-button> Login </button></a></p>
+                      </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

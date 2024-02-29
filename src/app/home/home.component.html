@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover over the image effect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="header">
+        <!-- <img url="images/images.jpeg" class="logo" alt="KAAR TECHNOLOGIES"> -->
+        <div class= "logo">
+         <h2>Kaar Techologies</h2>
+        </div>
+    
+        <div>
+            <ul id="navbar">
+                <li><a class ="active" href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+    </section>
+<br>
+    <div class="row">
+        <div class="col">
+            <div class="topic">
+                <div class="main">
+                    <h1>End To End Implementation
+                        <div class="roller">
+                          <span id="rolltext">OF<br />
+                            Machine Learning<br />
+                            For Business Prosses</span> <br />
+                          <span id="spare-time">automation of EDA</span><br />
+                        </div>
+                        </h1>
+                  
+                  </div>
+            </div>
+
+        </div>
+        <div class="col"> 
+            <div class="quote">
+                <p>"With the Right</p>
+                <p>Software, Great</p>
+                <p>Thing Can Happen"...</p>
+            </div>
+            <br>
+            <div class="cont">
+            <div input-field>
+                <form >
+                    <h3>UPLOAD DATASET &nbsp;:</h3>
+                     <input   type="file" class="file-upload" accept=".csv" (change)="onfileselected($event)" >
+                    <button (click)="onupload()" >Upload</button>
+                </form>
+            </div>
+                        
+             </div>
+        </div>
+    
+    </div>
+
+
+    <div class="container">
+    
+         <a href="http://localhost:3000/report_disp">
+            <div class="imgbox1">
+                <div class="box">
+                    <div class="content">
+                        <button> Data Quality report </button>
+
+                    </div>
+                </div>
+            </div> 
+        </a>
+
+
+
+            <div class="imgbox2" (click)="onfind()">
+                <div class="box">
+                    <div class="content">
+                        <button  type="button"> Algorithm Analyser</button>
+                    </div>
+                </div>
+            </div>    
+
+
+        <a href="\forecasting">
+            <div class="imgbox3">
+                <div class="box">
+                     <div class="content">
+                         <button>forecasting app</button>
+                    </div>
+                </div>
+            </div>
+        </a>
+       
+       
+    </div>
+   <br>
+    <div   *ngIf = "isActive" class="algo"  >
+       <h1>Suitable Algorithm...</h1>
+       <br>
+        <h5>{{backendLink1}}</h5>
+  </div> 
+
+
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+<body>
+    
+<div>
+    <h1>Forecast Here</h1>
+</div>
+<br>
+<div style="padding-left: 35%;">
+<div class="cont">
+    <form >
+        <label for="period">Choose a Period&nbsp;:&nbsp;&nbsp;</label>
+        <select (change) = "onvalueselected()" [(ngModel)]="type" name="period">
+          <option value="Y">yearly</option>
+          <option value="M">months</option>
+          <option value="Q">quaterly</option>
+          <option value="D">days</option>
+        </select>
+        <br>
+        <br>
+        <label for="period">Frequency&nbsp;:&nbsp;&nbsp;</label>
+        <input (change) = "onvalueselected()" type="number" placeholder="Enter number" required [(ngModel)]="value" name="target" >
+        <br>
+        <br>
+      
+        <button type="submit" (click)="onpredicit()">Predict</button>
+      </form>
+      </div>
+      <br>
+      <br>
+
+      <div style="padding-left:6px; float:center;">     
+        <div class="container">
+              <h2> Predicted&nbsp;Data</h2>
+                <canvas  id="line_chart" ></canvas>
+               <!-- <canvas id="bar_chart" style="max-height: 500px; margin:50px"></canvas> 
+                -->
+          </div>
+          
+          
+        
+        
+        </div>
+</div>
+</body>
+      

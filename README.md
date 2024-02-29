@@ -54,7 +54,8 @@ Customize the application by modifying configuration files:
 Thank you for choosing the Algorithm Analyzer! If you encounter any issues or have suggestions,Do reach out. Happy modeling!
 
 ## Demo
-<img width="632" alt="image" src="https://github.com/vasangit/Algorithm-Analyser/assets/114461223/6e0314fd-50c1-4595-818b-3ff7a9498ce6">
+
+<img width="629" alt="image" src="https://github.com/vasangit/Algorithm-Analyser/assets/114461223/4e41f863-04ac-4c83-b763-fcde221e0c55">
 <img width="632" alt="image" src="https://github.com/vasangit/Algorithm-Analyser/assets/114461223/223884ae-d87d-4dcd-bb24-5ccacfa3b2fd">
 <img width="635" alt="image" src="https://github.com/vasangit/Algorithm-Analyser/assets/114461223/04a2abd8-0661-4b4d-862b-4d63411a595b">
 

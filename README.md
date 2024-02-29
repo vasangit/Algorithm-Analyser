@@ -9,8 +9,6 @@ Welcome to the Algorithm Analyzer GitHub repository! This powerful application i
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 The Algorithm Analyzer is a cutting-edge solution that leverages AutoML capabilities for efficient machine learning model creation and analysis. With a seamless integration of PyCaret, Flask, FastAPI, MongoDB for secure user credentials, and React for a visually appealing frontend, this application provides an end-to-end solution for your machine learning needs.

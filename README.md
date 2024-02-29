@@ -1,6 +1,6 @@
 # Algorithm Analyzer
 
-Welcome to the Algorithm Analyzer GitHub repository! This powerful application is designed to effortlessly analyze and deploy machine learning models with the perfect blend of AutoML, PyCaret, Flask, FastAPI, MongoDB for user credentials, and Angular for an intuitive frontend.
+Welcome to the Algorithm Analyzer GitHub repository! This powerful application is designed to effortlessly analyze and deploy machine learning models with the perfect blend of AutoML, PyCaret, Flask, FastAPI, MongoDB for user credentials, and React for an intuitive frontend.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -13,20 +13,20 @@ Welcome to the Algorithm Analyzer GitHub repository! This powerful application i
 - [License](#license)
 
 ## Introduction
-The Algorithm Analyzer is a cutting-edge solution that leverages AutoML capabilities for efficient machine learning model creation and analysis. With a seamless integration of PyCaret, Flask, FastAPI, MongoDB for secure user credentials, and Angular for a visually appealing frontend, this application provides an end-to-end solution for your machine learning needs.
+The Algorithm Analyzer is a cutting-edge solution that leverages AutoML capabilities for efficient machine learning model creation and analysis. With a seamless integration of PyCaret, Flask, FastAPI, MongoDB for secure user credentials, and React for a visually appealing frontend, this application provides an end-to-end solution for your machine learning needs.
 
 ## Features
 - **AutoML Power:** Leverage the capabilities of AutoML for automated machine learning model creation.
 - **PyCaret Integration:** Utilize PyCaret for streamlined model analysis, comparison, and selection.
 - **Web Frameworks:** FastAPI and Flask combine to offer robust and efficient backend services.
 - **User Management:** Secure user credentials with MongoDB, ensuring privacy and data integrity.
-- **Angular Frontend:** Deliver an engaging user experience with the dynamic Angular frontend.
+- **React Frontend:** Deliver an engaging user experience with the dynamic React frontend.
 
 ## Requirements
 Ensure your system meets the following requirements before installing the AutoML Algorithm Analyzer:
 - Python 3.9
 - Node.js
-- Angular CLI
+- React CLI
 - MongoDB
 - Other dependencies as specified in the `requirements.txt` and `package.json` files.
 
@@ -48,13 +48,16 @@ Ensure your system meets the following requirements before installing the AutoML
 ## Configuration
 Customize the application by modifying configuration files:
 - `config.py` for backend settings
-- `angular.json` for Angular configurations
+- `React.json` for React configurations
 - Update MongoDB connection string in `app.py` for user credentials.
 
-## Contributing
-We welcome contributions! Please refer to the [Contributing Guidelines](CONTRIBUTING.md) for details on how to get involved.
+Thank you for choosing the Algorithm Analyzer! If you encounter any issues or have suggestions,Do reach out. Happy modeling!
 
-## License
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute as per the terms of the license.
+## Demo
+<img width="632" alt="image" src="https://github.com/vasangit/Algorithm-Analyser/assets/114461223/6e0314fd-50c1-4595-818b-3ff7a9498ce6">
+<img width="632" alt="image" src="https://github.com/vasangit/Algorithm-Analyser/assets/114461223/223884ae-d87d-4dcd-bb24-5ccacfa3b2fd">
+<img width="635" alt="image" src="https://github.com/vasangit/Algorithm-Analyser/assets/114461223/04a2abd8-0661-4b4d-862b-4d63411a595b">
 
-Thank you for choosing the AutoML Algorithm Analyzer! If you encounter any issues or have suggestions, please open an [issue](https://github.com/your-username/automl-algorithm-analyzer/issues). Happy modeling!
+
+
+
